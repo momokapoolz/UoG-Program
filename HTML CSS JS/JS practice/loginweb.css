@@ -1,0 +1,75 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+    width: 1500px;
+    text-align: center;
+}
+
+body {
+    background-color: darkslateblue;
+    color: azure;
+}
+
+p {
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/192/289/280/anime-anime-girls-hololive-gawr-gura-ninomae-ina-nis-hd-wallpaper-preview.jpg');
+}
+
+
+
+.form{   
+    width: 800px;
+    }
+    
+    .form_name{
+        width: 1000px;
+            
+        text-align: left;
+    }
+    
+
+    .form_email{
+        width: 1000px;
+        
+        text-align: right;
+
+        position: absolute;
+        top: 11%;
+        left: 20%;
+    }
+
+
+    .form_subject{
+        width: 1000px;
+        padding: 20px;
+        text-align: left;
+        position: absolute;
+        left: 0%;
+
+    }
+
+
+    input[type=text], text {
+        width: 500px;
+        color: black;
+    }
+
+
+    .text_box{
+        width: 1000px;
+        padding: 20px;
+        text-align: bottom;
+        position: absolute;
+        top: 20%;
+        left: 8%;
+
+    }
+
+    
+    input[type=textarea], textarea {
+        width: 1000px;
+        color: black;
+    }
+
+    
+
+

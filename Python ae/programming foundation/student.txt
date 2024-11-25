@@ -1,0 +1,8 @@
+Shirogane Miyuki,17,100.0
+Shinomiya Kaguya,17,99.0
+Fujiwara Chika,17,80.0
+Yu Ishigami,16,50.0
+Iino Miko,16,100.0
+Ai Hayasaka,17,90.0
+Tsubame Koyasu,18,95.0
+Kobachi Oaragi,16,95

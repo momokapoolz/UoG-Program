@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(54, 54, 54);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* style the container */
+.container {
+    /* We use relative to allow us to position the element relative to the container, however in this case we're using it to create our own stacking context for a positioned element we'll use later */
+    position: relative;
+
+    /* This rounds all 4 corners by 5px, this is a shorthand implementation and applies the same value to all corners rather than having to write it out 4 times */
+    /* Even though this references the border, you don't need a border visible to use it, you can set border:none; and it'll still work */
+    /* Sometimes content may leak through a rounded corner, so you may need to use overflow: hidden; to hide the overflowing content (this is the system that creates your browser scrollbar) */
+    border-radius: 5px;
+
+    /* Does what it says on the tin, sets our background colour to the given hex code */
+    background-color: #f2f2f2;
+
+    /* Adds padding to two sides of our container, can you work out what sides? Use inspector in devtools to see */
+    padding: 20px 0 30px 0;
+} 
+
+/* style inputs and link buttons */
+/* Notice we target two types of elements here; one with the class "btn" and then any element that is an input (similar to the above body, except we can have multiple). We use a comma to separate multiple element selectors, for good practice it's also use to put them on their own lines for readability */
+/* Input fields are usually very heavily influenced by the browser and operating system, so we have to do a bit more work to style them to remove their default styling */
+input,
+.btn {
+    /* Remove the default browser styling, this doesn't remove all styling but usually reduces the browser specific styling */
+    appearance: none;
+
+    /* These elements are usually displayed in a form of "inline" meaning they follow a "natural" width, so we explicitly tell them to fill the available space */
+    width: 100%;
+
+    /* Adds some spacing to all sides of our element */
+    padding: 12px;
+
+    /* Remove the border, this is usually added by default by browsers and for good reason */
+    border: none;
+
+    /* Add our rounded corners */
+    border-radius: 4px;
+
+    /* Add space around the outside (padding is usually inside, margin is outside). This impacts one axis only, another type of shorthand where you only need to define 2 out of the 4 values if you want to impact the values in pairs. Use inspector to see what axis we're adding margins to */
+    margin: 5px 0;
+
+    /* Reduce the opacity slightly, this allows us to show an interaction at a later stage when the user hovers over the element */
+    opacity: 0.85;
+
+    /* Ensure that our element is displayed as an inline-block element, that's an inline element but with some of the layout controls of a block element */
+    display: inline-block;
+
+    /* Set our font size */
+    font-size: 17px;
+
+    /* Set our line height using the "em" unit of measure, this makes it relative to the font size - in this case it'd be 17 * 1.2 = 20 (roughly) */
+    line-height: 1.2em;
+
+    /* Remove underlines from our links */
+    text-decoration: none;
+}
+
+/* We'll use the pseudo selector for hover events - this is as it sounds, when the mouse is hovering over the element. What could be the problem with this approach when it comes to touch devices? */
+input:hover,
+.btn:hover {
+    /* When the user hovers over the element we will up the opacity to full opacity, this will help indicate to the user that they can interact */
+    opacity: 1;
+}
+
+/* Two-column layout */
+.col {
+    /* There are many approaches to a two-column system, in this example we are using the float method which "floats" the element on-top of the page layout */
+    float: left;
+
+    /* We want the column to use 50% of the space available */
+    width: 50%;
+
+    /* Auto allows the browser to automatically apply margin, this is a neat little trick to center elements horizontally */
+    margin: auto;
+
+    padding: 0 50px;
+
+    /* We override the "margin: auto" above specifically just for the top margin, and set that to our value */
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns, this is known as a "clearfix" which fixes an issue when using floats of not clearing them after and disrupting the flow of the whole document - similar to forgetting to close a HTML tag */
+/* We use this pseudo selector to add styling after an element */
+.row:after {
+    /* A special attribute that allows us to "inject" content into the page, try putting something in here to see what it does */
+    /* Without content, this styling won't have any effect, so we inject some blank content */
+    content: "";
+
+    /* We display it as a table to force the browser to reset the layout */
+    display: table;
+
+    /* We clear both our left and right floats (we're only using left here currently, but good practice to clear both) - this stops the interruption of the layout */
+    clear: both;
+}
+
+/* vertical line */
+.vl {
+    /* Absolute removes the element from the page layout and positions based on given coordinates, in relation to the "relative" container - this is why on the container we set the position to relative. Try removing the line "position: relative" from the "container" class and see what happens. It should default to position against the whole page */
+    position: absolute;
+
+    /* We position it halfway from the left, we tend to code from the left as this is how the browser lays out a webpage (top left to bottom right), but we could use right: 50% and change our transform */
+    left: 50%;
+
+    /* When we don't define top it is automatically set by the browser, usually following the flow of the page */
+
+    /* A powerful property, in this case we are using the translate value which allows us to move an object relative to itself without impacting the flow of the page */
+    /* Moving it on the X axis means we offset half it's width against X, effectively re-centering it - using "left: 50%" above offset us slightly as it set the left of our line in the middle, rather than the middle of our line - this fixes that */
+    transform: translate(-50%);
+
+    /* We set ourselves a 2px border all the way round, again this is a shorthand */
+    border: 2px solid #ddd;
+
+    /* We finally set out fixed height, we don't use this often as we usually want content to flow naturally without being cut off, but in this case we want a solid line at a height we control */
+    height: 175px;
+}
+
+/* text inside the vertical line, we need to position this in the center vertically and horizontally */
+.vl-innertext {
+    /* We use absolute again, this is relative to the parent class "vl" because it is also absolute */
+    position: absolute;
+
+    /* We position it vertically halfway down (again remembering this is to the top of the element, not the middle) */
+    top: 50%;
+
+    /* Let's offset half the width and height to re-center our element */
+    transform: translate(-50%, -50%);
+
+    /* Match the background colour to give the illusion that this is a cut-out on top of the content */
+    background-color: #f1f1f1;
+
+    /* Add our border, short hand */
+    border: 1px solid #ccc;
+
+    /* We can use percentages in our border radius, using 50% means every corner is rounded to half the width/height of the element, effectively creating a circle on a square element */
+    border-radius: 50%;
+    padding: 8px 10px;
+}
+
+/* bottom container */
+.bottom-container {
+    /* Due to the nature of inheritance in CSS we can set how we want our text to align once and it'll carry on down to the child elements - good way to optimise our code */
+    text-align: center;
+    background-color: #666;
+
+    /* Long form radius, we only wan to round specific corners - inspect to see what ones */
+    border-radius: 0px 0px 4px 4px;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+    background-color: #3B5998;
+    color: white;
+}
+
+.twitter {
+    background-color: #55ACEE;
+    color: white;
+}
+
+.google {
+    background-color: #dd4b39;
+    color: white;
+}
+
+  /* style the submit button */
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+    display: none;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+    .col {
+        width: 100%;
+        margin-top: 0;
+    }
+    /* hide the vertical line */
+    .vl {
+        display: none;
+    }
+    /* show the hidden text on small screens */
+    .hide-md-lg {
+        display: block;
+        text-align: center;
+        }
+    }
+    
