@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="911d45ba-7a0d-4336-8f3d-4de78070bbe2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../DSA self learn/Array/arrayLeader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DSA self learn/Array/arrayPairOfSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DSA self learn/Array/arraySimpleOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CW/OrderQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DSA self learn/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python data analysis - data structure/CW/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python data analysis - data structure/CW/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python data analysis - data structure/CW/tezt.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python data analysis - data structure/CW/tezt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python data analysis - data structure/CW/tst.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python data analysis - data structure/CW/tst.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python data analysis - data structure/decorator.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python data analysis - data structure/decorator.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/CW/CWApp.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/CW/Order.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/CW/OrderStack.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/Recursion/recursion.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/Sort/checkIfSorted.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/Sort/sortAlgorithms.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/Stack/Stack.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2j2n7GDg0lafD2aOoQFAHcMff9X" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AttributeSearcher.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CWApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.array.executor&quot;: &quot;Run&quot;,
+    &quot;Application.arrayElement.executor&quot;: &quot;Run&quot;,
+    &quot;Application.checkIfSorted.executor&quot;: &quot;Run&quot;,
+    &quot;Application.mmb.executor&quot;: &quot;Run&quot;,
+    &quot;Application.mmb2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.node.executor&quot;: &quot;Run&quot;,
+    &quot;Application.recursion.executor&quot;: &quot;Run&quot;,
+    &quot;Application.sortAlgorithms.executor&quot;: &quot;Run&quot;,
+    &quot;Application.sortAlgro.executor&quot;: &quot;Run&quot;,
+    &quot;Application.timeComplexity.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Documents/Developing-Coding-Programming UoG/program year 2 ae/Java/DSA with Java&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Admin/Documents/Developing-Coding-Programming UoG/program year 2 ae/Java/DSA with Java/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.sortAlgorithms">
+    <configuration name="CWApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CW.CWApp" />
+      <module name="DSA with Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CW.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="checkIfSorted" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Sort.checkIfSorted" />
+      <module name="DSA with Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2" />
+    </configuration>
+    <configuration name="sortAlgorithms" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Sort.sortAlgorithms" />
+      <module name="DSA with Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CWApp" />
+        <item itemvalue="Application.checkIfSorted" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="911d45ba-7a0d-4336-8f3d-4de78070bbe2" name="Changes" comment="" />
+      <created>1720593870496</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720593870496</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DSA_with_Java$CWApp.ic" NAME="CWApp Coverage Results" MODIFIED="1722487648391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>CW.*</FILTER>
+    </SUITE>
+  </component>
+</project>

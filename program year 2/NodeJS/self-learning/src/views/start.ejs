@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <title>ExpressJS Web</title>
+</head>
+<style>
+    table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color:cadetblue;
+}
+</style>
+
+<body>
+    ME MAY BEO
+    
+    <div>
+        <img src="../public/sampleimage.jpg">
+    </div>
+    <div class="topnav">
+        <a href="/">Home</a>
+        <a href="/create">Create user</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+    <div>
+        <%= JSON.stringify(listUsers) %>
+    </div>
+    
+    <table>
+        <tr>
+            <th>Email</th>
+            <th>Name</th>
+            <th>City</th>
+            <th>Action</th>
+        </tr>
+        <% for (let i = 0; i < listUsers.length; i++) { %>
+            <tr>
+                <td><%= listUsers[i].email %></td>
+                <td><%= listUsers[i].name %></td>
+                <td><%= listUsers[i].city %></td>
+                <th>
+                    <a href="/update/<%= listUsers[i].id %>">Edit</a>
+
+                    <form action="/delete-user/<%= listUsers[i].id %>" method="post">
+                        <input type="hidden" value="<%= listUsers[i].id %>" name="userId"><br>
+                        <button type="submit">Delete</button>
+                    </form>
+                </th>
+            </tr>
+        <% } %>
+        
+
+</body>
+
+</html>

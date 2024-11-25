@@ -1,0 +1,50 @@
+.input-group {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+#first-name {
+    height: 30px;
+    width: 210px;
+}
+
+#last-name {
+    height: 30px;
+    width: 210px;
+}
+
+#dob {
+    height: 30px;
+    width: 210px;
+}
+
+#email {
+    height: 30px;
+    width: 210px;
+}
+
+#tel {
+    height: 30px;
+    width: 210px;
+}
+
+#button {
+    height: 50px;
+    width: 100px;
+    background-color: aquamarine;
+    /* Green */
+    color:mediumblue;
+    text-align: center;
+    display: inline-block;
+}
+
+h2 {
+    text-align: center;
+    text-decoration:solid;
+    color: cadetblue;
+    size: 30;
+    
+}

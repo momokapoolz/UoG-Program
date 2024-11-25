@@ -1,0 +1,1 @@
+<h1>Display information</h1>

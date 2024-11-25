@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="a"></h1>
+
+    <input type="text" name="" id="input">
+
+    <input type="number" name="" id="num">
+
+    <button onclick={display()}>Ok</button>
+
+
+
+    <h1 id="text"></h1>
+    <br>
+
+    <input type="text" name="" id="input2">
+
+    <script>
+        alert("t dbt noi j luon")
+        console.log("mmb")
+        document.getElementById("a").innerHTML = "Nhap tuoi cua b"
+
+        function display(){
+            let a = document.getElementById("input").value
+            let b = document.getElementById("num").value
+
+            document.getElementById("a").innerHTML = " ban "+ a + " da " + b + " tuoi roi "
+        }
+
+        const input = document.getElementById("input2")
+        const output = document.getElementById("text")
+
+        input.addEventListener('input', function(){
+            output.innerHTML = input.value
+        })
+
+        
+    </script>
+
+
+</body>
+
+</html>()

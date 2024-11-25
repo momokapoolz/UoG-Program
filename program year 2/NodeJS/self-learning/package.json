@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-self-taught",
+  "version": "1.0.0",
+  "description": "Start NodeJS ",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node start.js",
+    "start2": "nodemon express.js"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "momokapool",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
