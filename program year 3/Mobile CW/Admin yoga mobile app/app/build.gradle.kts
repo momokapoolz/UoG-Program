@@ -48,6 +48,9 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
+     // hoặc version mới hơn
+
+
     // Firebase BoM (Bill of Materials)
     implementation(platform("com.google.firebase:firebase-bom:33.12.0"))
 
@@ -59,5 +62,8 @@ dependencies {
 
     // Firebase Authentication (if needed)
     implementation("com.google.firebase:firebase-auth")
+
+    implementation ("com.google.firebase:firebase-database:20.3.0")
+
 
 }

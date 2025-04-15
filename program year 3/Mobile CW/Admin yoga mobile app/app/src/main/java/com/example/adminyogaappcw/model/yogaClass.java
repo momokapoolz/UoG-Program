@@ -1,6 +1,9 @@
 package com.example.adminyogaappcw.model;
 
-public class yogaClass {
+import java.io.Serializable;
+
+
+public class yogaClass implements Serializable {
     private String dayOfWeek;
     private String time;
     private int capacity;
