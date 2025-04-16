@@ -35,6 +35,14 @@
             android:layout_width="match_parent" android:layout_height="wrap_content"
             android:layout_marginTop="16dp"/>
 
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#4CAF50"/>
+
         <TextView android:id="@+id/txtError"
             android:textColor="@android:color/holo_red_dark"
             android:layout_width="match_parent"

@@ -13,6 +13,12 @@
         android:theme="@style/Theme.AdminYogaAppCW"
         tools:targetApi="31">
         <activity
+            android:name=".EditYogaClassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListYogaClassesActivity"
+            android:exported="false" />
+        <activity
             android:name=".ConfirmYogaClassActivity"
             android:exported="false" />
         <activity

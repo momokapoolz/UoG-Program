@@ -16,21 +16,35 @@
             android:layout_height="wrap_content"
             android:paddingBottom="16dp" />
 
-
-        <Button
-            android:id="@+id/btnConfirmSave"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Upload" />
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp">
 
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Edit"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnConfirmSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Confirm &amp; Save"/>
+        </LinearLayout>
+        
         <Button
-            android:id="@+id/btnEdit"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnHome"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Edit"
-            android:layout_marginTop="12dp"
-            android:layout_gravity="center_horizontal"/>/>
-
+            android:text="Home"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#4CAF50"/>
 
     </LinearLayout>
 </ScrollView>

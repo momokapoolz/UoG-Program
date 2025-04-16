@@ -19,7 +19,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class AddYogaClassActivity extends AppCompatActivity {
 
     private EditText edtDay, edtTime, edtCapacity, edtDuration, edtPrice, edtType, edtDescription, edtInstructor, edtDifficulty;
-    private Button btnSubmit;
+    private Button btnSubmit, btnHome;
     private TextView txtError;
 
     @Override
@@ -37,6 +37,7 @@ public class AddYogaClassActivity extends AppCompatActivity {
         edtInstructor = findViewById(R.id.edtInstructor);
         edtDifficulty = findViewById(R.id.edtDifficulty);
         btnSubmit = findViewById(R.id.btnSubmit);
+        btnHome = findViewById(R.id.btnHome);
         txtError = findViewById(R.id.txtError);
 
         btnSubmit.setOnClickListener(view -> {
@@ -71,6 +72,12 @@ public class AddYogaClassActivity extends AppCompatActivity {
             } catch (NumberFormatException e) {
                 txtError.setText("Invalid number format.");
             }
+        });
+        
+        btnHome.setOnClickListener(view -> {
+            Intent intent = new Intent(AddYogaClassActivity.this, MainActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
         });
     }
 
